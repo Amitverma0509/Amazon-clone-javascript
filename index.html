@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="shortcut icon" href="./images/amazon.png" type="image/x-icon">
+    <title>Amazon Project</title>
+</head>
+<body>
+    <div class="amazon-header">
+        <div class="amazon-header-left-section">
+            <a href="amazon.html" class="header-link">
+                <img class="amazon-logo" src="./images/amazon-logo-white.png" >
+                <img src="./images/amazon-mobile-logo-white.png" alt="" class="amazon-mobile-logo">
+            </a>
+        </div>
+
+        <div class="amazon-header-middle-section">
+            <input placeholder="Search" type="text" class="search-bar">
+            <button class="search-button">
+                <img src="./images/icons/search-icon.png" class="search-icon">
+            </button>
+        </div>
+
+        <div class="amazon-header-right-section">
+            <a href="orders.html" class="order-link header-link">
+                <span class="returns-text">Returns</span>
+                <span class="orders-text">& Order</span>
+            </a>
+            <a href="checkout.html" class="cart-link header-link">
+                <img src="./images/icons/cart-icon.png" class="cart-icon">
+                <div class="cart-quantity js-cart-quantity">0</div>
+                <div class="cart-text">Cart</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="products-grid js-products-grid">
+        </div>
+    </div>
+    <script type="module" src="scripts/amazon.js"></script>
+</body>
+</html>
